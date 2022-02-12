@@ -10,8 +10,8 @@ class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap'
             rel='stylesheet'
           />
-          <meta name='description' content='MERN stack developer looking for a job' />
-          <meta name='keywords' content='Full Stack Web Developer, Freelancer ,MERN developer' />
+          <meta name='description' content='Web developer' />
+          <meta name='keywords' content='Full Stack Web Developer, Freelancer' />
         </Head>
         <body className='bg-fixed bg-gradient-to-r from-green to-blue-500 dark:from-black-200 dark:to-black-700 dark:text-white'>
           <Main />
