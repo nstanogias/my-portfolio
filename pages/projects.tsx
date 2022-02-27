@@ -36,7 +36,7 @@ const Projects = () => {
       exit='exit'
     >
       <Head>
-        <title>Nikolaos Stanogias | Web Developer</title>
+        <title>Nikolaos Stanogias | Web Developer | Projects</title>
       </Head>
       <ProjectNavbar handleFilterCategory={handleFilterCategory} active={active} />
       <motion.div

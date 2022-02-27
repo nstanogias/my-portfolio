@@ -14,7 +14,7 @@ const About = () => {
       exit='exit'
     >
       <Head>
-        <title>Nikolaos Stanogias | Web Developer</title>
+        <title>Nikolaos Stanogias | Web Developer | About</title>
       </Head>
       <h4 className='my-3'>
         Passionate web developer with 7 years of experience, having worked in numerous projects within Finance, Telecom

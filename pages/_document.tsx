@@ -12,6 +12,22 @@ class MyDocument extends Document {
           />
           <meta name='description' content='Web developer' />
           <meta name='keywords' content='Full Stack Web Developer, Freelancer' />
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
         </Head>
         <body className='bg-fixed bg-gradient-to-r from-green to-blue-500 dark:from-black-200 dark:to-black-700 dark:text-white'>
           <Main />

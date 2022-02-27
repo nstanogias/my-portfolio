@@ -8,7 +8,7 @@ const Resume = () => {
   return (
     <motion.div className='px-6 py-2' variants={routeFade} initial='hidden' animate='visible' exit='exit'>
       <Head>
-        <title>Nikolaos Stanogias | Web Developer</title>
+        <title>Nikolaos Stanogias | Web Developer | Resume</title>
       </Head>
       {/* //! Education & Experience */}
       <div className='grid gap-6 md:grid-cols-2'>
