@@ -1,5 +1,5 @@
 import { AnimatePresence } from 'framer-motion';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { ThemeProvider } from 'next-themes';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
@@ -8,17 +8,23 @@ import Script from 'next/script';
 import * as ga from '../lib/google-analytics';
 
 function MyApp({ Component, pageProps, router }) {
-  console.log(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID);
+  // https://github.com/framer/motion/issues/578
+  const [isLoaded, setLoaded] = useState(false);
   useEffect(() => {
     const handleRouteChange = (url) => {
       ga.pageview(url);
     };
 
     router.events.on('routeChangeComplete', handleRouteChange);
+    setLoaded(true);
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
   }, [router.events]);
+
+  if (!isLoaded) {
+    return <></>;
+  }
 
   return (
     <>

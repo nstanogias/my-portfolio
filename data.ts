@@ -164,4 +164,14 @@ export const projects: IProject[] = [
     category: ['angular', 'spring'],
     key_techs: ['Angular', 'Spring Boot'],
   },
+  {
+    id: 7,
+    name: 'Realand',
+    description: 'Real Estate Forum',
+    image_path: '/images/realand.png',
+    deployed_url: 'https://realand-nstanogias.vercel.app/',
+    github_url: 'https://github.com/nstanogias/realand',
+    category: ['react'],
+    key_techs: ['React', 'NextJS'],
+  },
 ];
