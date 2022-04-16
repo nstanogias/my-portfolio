@@ -19,7 +19,7 @@ const About = () => {
       <h4 className='my-3'>
         Passionate web developer with 7 years of experience, having worked in numerous projects within Finance, Telecom
         and eCommerce industries. I never stop learning and always try to keep myself up-to-date with latest trends and
-        technologies.
+        technologies. Lately, I have keen interest for blockchain and Web3 DApps.
       </h4>
       <div
         className='flex-grow p-4 mt-5 bg-gray-400 dark:bg-black-100'
