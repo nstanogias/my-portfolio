@@ -23,4 +23,4 @@ export interface IProject {
 }
 
 // user defined types
-export type Category = 'react' | 'spring' | 'node' | 'mongo' | 'angular';
+export type Category = 'react' | 'spring' | 'node' | 'mongo' | 'angular' | 'blockchain';
