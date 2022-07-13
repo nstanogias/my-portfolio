@@ -3,12 +3,19 @@ import { GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
+import { useEffect } from 'react';
+
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
 
   const changeMode = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
+
+  useEffect(() => {
+    setTheme('dark');
+  }, []);
+
   return (
     <>
       <Image width='128' height='128' src='/images/profile.jpg' alt='avatar' className='mx-auto border rounded-full ' />
